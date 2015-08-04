@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project name="TEST_PROJECT_14" id="TEST_PROJECT_14">
+    <ParentProject></ParentProject>
+    <SubProjects/>
+    <Output>/</Output>
+    <Src/>
+    <CreateDate>2015-07-13T13:06:20.353+08:00</CreateDate>
+    <CVS>
+        <ConnectionType>pserver</ConnectionType>
+        <UserID></UserID>
+        <Password></Password>
+        <Host>127.0.0.1</Host>
+        <RepositoryPath></RepositoryPath>
+        <ModuleName></ModuleName>
+        <ServerType>SVN</ServerType>
+        <SVNHook>Close</SVNHook>
+    </CVS>
+    <Language></Language>
+    <Version></Version>
+    <SourceVersion></SourceVersion>
+    <State></State>
+    <ProjectManager>Project_Manager_14</ProjectManager>
+    <Comment>This is Test Project - 14</Comment>
+    <NotifyBuild/>
+    <ProjectReferences/>
+    <ExternalReferences/>
+    <InternalReferences/>
+    <Roles/>
+    <Participants/>
+    <Natures/>
+    <AttachFileMaxSize>2</AttachFileMaxSize>
+    <BC_SP></BC_SP>
+    <BV></BV>
+</Project>

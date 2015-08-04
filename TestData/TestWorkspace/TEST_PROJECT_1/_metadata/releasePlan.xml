@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Releases>
+  <Release id="1">
+    <Name>TEST_RELEASE_1</Name>
+    <StartDate>2015/07/13</StartDate>
+    <EndDate>2016/01/09</EndDate>
+    <Description>This is Release Description - 1</Description>
+  </Release>
+  <Release id="2">
+    <Name>TEST_RELEASE_2</Name>
+    <StartDate>1991/04/01</StartDate>
+    <EndDate>1991/09/28</EndDate>
+    <Description>This is Release Description - 2</Description>
+  </Release>
+  <Release id="3">
+    <Name>TEST_RELEASE_3</Name>
+    <StartDate>1991/09/29</StartDate>
+    <EndDate>1992/03/27</EndDate>
+    <Description>This is Release Description - 3</Description>
+  </Release>
+  <Release id="4">
+    <Name>TEST_RELEASE_4</Name>
+    <StartDate>1992/03/28</StartDate>
+    <EndDate>1992/09/24</EndDate>
+    <Description>This is Release Description - 4</Description>
+  </Release>
+  <Release id="5">
+    <Name>TEST_RELEASE_5</Name>
+    <StartDate>1992/09/25</StartDate>
+    <EndDate>1993/03/24</EndDate>
+    <Description>This is Release Description - 5</Description>
+  </Release>
+  <Release id="6">
+    <Name>TEST_RELEASE_6</Name>
+    <StartDate>1993/03/25</StartDate>
+    <EndDate>1993/09/21</EndDate>
+    <Description>This is Release Description - 6</Description>
+  </Release>
+  <Release id="7">
+    <Name>TEST_RELEASE_7</Name>
+    <StartDate>1993/09/22</StartDate>
+    <EndDate>1994/03/21</EndDate>
+    <Description>This is Release Description - 7</Description>
+  </Release>
+  <Release id="8">
+    <Name>TEST_RELEASE_8</Name>
+    <StartDate>1994/03/22</StartDate>
+    <EndDate>1994/09/18</EndDate>
+    <Description>This is Release Description - 8</Description>
+  </Release>
+  <Release id="9">
+    <Name>TEST_RELEASE_9</Name>
+    <StartDate>1994/09/19</StartDate>
+    <EndDate>1995/03/18</EndDate>
+    <Description>This is Release Description - 9</Description>
+  </Release>
+  <Release id="10">
+    <Name>TEST_RELEASE_10</Name>
+    <StartDate>1995/03/19</StartDate>
+    <EndDate>1995/09/15</EndDate>
+    <Description>This is Release Description - 10</Description>
+  </Release>
+  <Release id="11">
+    <Name>TEST_RELEASE_11</Name>
+    <StartDate>1995/09/16</StartDate>
+    <EndDate>1996/03/14</EndDate>
+    <Description>This is Release Description - 11</Description>
+  </Release>
+  <Release id="12">
+    <Name>TEST_RELEASE_12</Name>
+    <StartDate>1996/03/15</StartDate>
+    <EndDate>1996/09/11</EndDate>
+    <Description>This is Release Description - 12</Description>
+  </Release>
+  <Release id="13">
+    <Name>TEST_RELEASE_13</Name>
+    <StartDate>1996/09/12</StartDate>
+    <EndDate>1997/03/11</EndDate>
+    <Description>This is Release Description - 13</Description>
+  </Release>
+  <Release id="14">
+    <Name>TEST_RELEASE_14</Name>
+    <StartDate>1997/03/12</StartDate>
+    <EndDate>1997/09/08</EndDate>
+    <Description>This is Release Description - 14</Description>
+  </Release>
+  <Release id="15">
+    <Name>TEST_RELEASE_15</Name>
+    <StartDate>1997/09/09</StartDate>
+    <EndDate>1998/03/08</EndDate>
+    <Description>This is Release Description - 15</Description>
+  </Release>
+  <Release id="16">
+    <Name>TEST_RELEASE_16</Name>
+    <StartDate>1998/03/09</StartDate>
+    <EndDate>1998/09/05</EndDate>
+    <Description>This is Release Description - 16</Description>
+  </Release>
+  <Release id="17">
+    <Name>TEST_RELEASE_17</Name>
+    <StartDate>1998/09/06</StartDate>
+    <EndDate>1999/03/05</EndDate>
+    <Description>This is Release Description - 17</Description>
+  </Release>
+  <Release id="18">
+    <Name>TEST_RELEASE_18</Name>
+    <StartDate>1999/03/06</StartDate>
+    <EndDate>1999/09/02</EndDate>
+    <Description>This is Release Description - 18</Description>
+  </Release>
+  <Release id="19">
+    <Name>TEST_RELEASE_19</Name>
+    <StartDate>1999/09/03</StartDate>
+    <EndDate>2000/03/01</EndDate>
+    <Description>This is Release Description - 19</Description>
+  </Release>
+  <Release id="20">
+    <Name>TEST_RELEASE_20</Name>
+    <StartDate>2000/03/02</StartDate>
+    <EndDate>2000/08/29</EndDate>
+    <Description>This is Release Description - 20</Description>
+  </Release>
+  <Release id="21">
+    <Name>TEST_RELEASE_21</Name>
+    <StartDate>2000/08/30</StartDate>
+    <EndDate>2001/02/26</EndDate>
+    <Description>This is Release Description - 21</Description>
+  </Release>
+  <Release id="22">
+    <Name>TEST_RELEASE_22</Name>
+    <StartDate>2001/02/27</StartDate>
+    <EndDate>2001/08/26</EndDate>
+    <Description>This is Release Description - 22</Description>
+  </Release>
+  <Release id="23">
+    <Name>TEST_RELEASE_23</Name>
+    <StartDate>2001/08/27</StartDate>
+    <EndDate>2002/02/23</EndDate>
+    <Description>This is Release Description - 23</Description>
+  </Release>
+  <Release id="24">
+    <Name>TEST_RELEASE_24</Name>
+    <StartDate>2002/02/24</StartDate>
+    <EndDate>2002/08/23</EndDate>
+    <Description>This is Release Description - 24</Description>
+  </Release>
+  <Release id="25">
+    <Name>TEST_RELEASE_25</Name>
+    <StartDate>2002/08/24</StartDate>
+    <EndDate>2003/02/20</EndDate>
+    <Description>This is Release Description - 25</Description>
+  </Release>
+  <Release id="26">
+    <Name>TEST_RELEASE_26</Name>
+    <StartDate>2003/02/21</StartDate>
+    <EndDate>2003/08/20</EndDate>
+    <Description>This is Release Description - 26</Description>
+  </Release>
+  <Release id="27">
+    <Name>TEST_RELEASE_27</Name>
+    <StartDate>2003/08/21</StartDate>
+    <EndDate>2004/02/17</EndDate>
+    <Description>This is Release Description - 27</Description>
+  </Release>
+  <Release id="28">
+    <Name>TEST_RELEASE_28</Name>
+    <StartDate>2004/02/18</StartDate>
+    <EndDate>2004/08/16</EndDate>
+    <Description>This is Release Description - 28</Description>
+  </Release>
+  <Release id="29">
+    <Name>TEST_RELEASE_29</Name>
+    <StartDate>2004/08/17</StartDate>
+    <EndDate>2005/02/13</EndDate>
+    <Description>This is Release Description - 29</Description>
+  </Release>
+  <Release id="30">
+    <Name>TEST_RELEASE_30</Name>
+    <StartDate>2005/02/14</StartDate>
+    <EndDate>2005/08/13</EndDate>
+    <Description>This is Release Description - 30</Description>
+  </Release>
+  <Release id="31">
+    <Name>TEST_RELEASE_31</Name>
+    <StartDate>2005/08/14</StartDate>
+    <EndDate>2006/02/10</EndDate>
+    <Description>This is Release Description - 31</Description>
+  </Release>
+  <Release id="32">
+    <Name>TEST_RELEASE_32</Name>
+    <StartDate>2006/02/11</StartDate>
+    <EndDate>2006/08/10</EndDate>
+    <Description>This is Release Description - 32</Description>
+  </Release>
+  <Release id="33">
+    <Name>TEST_RELEASE_33</Name>
+    <StartDate>2006/08/11</StartDate>
+    <EndDate>2007/02/07</EndDate>
+    <Description>This is Release Description - 33</Description>
+  </Release>
+  <Release id="34">
+    <Name>TEST_RELEASE_34</Name>
+    <StartDate>2007/02/08</StartDate>
+    <EndDate>2007/08/07</EndDate>
+    <Description>This is Release Description - 34</Description>
+  </Release>
+  <Release id="35">
+    <Name>TEST_RELEASE_35</Name>
+    <StartDate>2007/08/08</StartDate>
+    <EndDate>2008/02/04</EndDate>
+    <Description>This is Release Description - 35</Description>
+  </Release>
+  <Release id="36">
+    <Name>TEST_RELEASE_36</Name>
+    <StartDate>2008/02/05</StartDate>
+    <EndDate>2008/08/03</EndDate>
+    <Description>This is Release Description - 36</Description>
+  </Release>
+  <Release id="37">
+    <Name>TEST_RELEASE_37</Name>
+    <StartDate>2008/08/04</StartDate>
+    <EndDate>2009/01/31</EndDate>
+    <Description>This is Release Description - 37</Description>
+  </Release>
+  <Release id="38">
+    <Name>TEST_RELEASE_38</Name>
+    <StartDate>2009/02/01</StartDate>
+    <EndDate>2009/07/31</EndDate>
+    <Description>This is Release Description - 38</Description>
+  </Release>
+  <Release id="39">
+    <Name>TEST_RELEASE_39</Name>
+    <StartDate>2009/08/01</StartDate>
+    <EndDate>2010/01/28</EndDate>
+    <Description>This is Release Description - 39</Description>
+  </Release>
+  <Release id="40">
+    <Name>TEST_RELEASE_40</Name>
+    <StartDate>2010/01/29</StartDate>
+    <EndDate>2010/07/28</EndDate>
+    <Description>This is Release Description - 40</Description>
+  </Release>
+  <Release id="41">
+    <Name>TEST_RELEASE_41</Name>
+    <StartDate>2010/07/29</StartDate>
+    <EndDate>2011/01/25</EndDate>
+    <Description>This is Release Description - 41</Description>
+  </Release>
+  <Release id="42">
+    <Name>TEST_RELEASE_42</Name>
+    <StartDate>2011/01/26</StartDate>
+    <EndDate>2011/07/25</EndDate>
+    <Description>This is Release Description - 42</Description>
+  </Release>
+  <Release id="43">
+    <Name>TEST_RELEASE_43</Name>
+    <StartDate>2011/07/26</StartDate>
+    <EndDate>2012/01/22</EndDate>
+    <Description>This is Release Description - 43</Description>
+  </Release>
+  <Release id="44">
+    <Name>TEST_RELEASE_44</Name>
+    <StartDate>2012/01/23</StartDate>
+    <EndDate>2012/07/21</EndDate>
+    <Description>This is Release Description - 44</Description>
+  </Release>
+  <Release id="45">
+    <Name>TEST_RELEASE_45</Name>
+    <StartDate>2012/07/22</StartDate>
+    <EndDate>2013/01/18</EndDate>
+    <Description>This is Release Description - 45</Description>
+  </Release>
+  <Release id="46">
+    <Name>TEST_RELEASE_46</Name>
+    <StartDate>2013/01/19</StartDate>
+    <EndDate>2013/07/18</EndDate>
+    <Description>This is Release Description - 46</Description>
+  </Release>
+  <Release id="47">
+    <Name>TEST_RELEASE_47</Name>
+    <StartDate>2013/07/19</StartDate>
+    <EndDate>2014/01/15</EndDate>
+    <Description>This is Release Description - 47</Description>
+  </Release>
+  <Release id="48">
+    <Name>TEST_RELEASE_48</Name>
+    <StartDate>2014/01/16</StartDate>
+    <EndDate>2014/07/15</EndDate>
+    <Description>This is Release Description - 48</Description>
+  </Release>
+  <Release id="49">
+    <Name>TEST_RELEASE_49</Name>
+    <StartDate>2014/07/16</StartDate>
+    <EndDate>2015/01/12</EndDate>
+    <Description>This is Release Description - 49</Description>
+  </Release>
+  <Release id="50">
+    <Name>TEST_RELEASE_50</Name>
+    <StartDate>2015/01/13</StartDate>
+    <EndDate>2015/07/12</EndDate>
+    <Description>This is Release Description - 50</Description>
+  </Release>
+  <Release id="51">
+    <Name>TEST_RELEASE_51</Name>
+    <StartDate>2015/07/13</StartDate>
+    <EndDate>2016/01/09</EndDate>
+    <Description>This is Release Description - 51</Description>
+  </Release>
+  <Release id="52">
+    <Name>TEST_RELEASE_52</Name>
+    <StartDate>2016/01/10</StartDate>
+    <EndDate>2016/07/08</EndDate>
+    <Description>This is Release Description - 52</Description>
+  </Release>
+  <Release id="53">
+    <Name>TEST_RELEASE_53</Name>
+    <StartDate>2016/07/09</StartDate>
+    <EndDate>2017/01/05</EndDate>
+    <Description>This is Release Description - 53</Description>
+  </Release>
+  <Release id="54">
+    <Name>TEST_RELEASE_54</Name>
+    <StartDate>2017/01/06</StartDate>
+    <EndDate>2017/07/05</EndDate>
+    <Description>This is Release Description - 54</Description>
+  </Release>
+  <Release id="55">
+    <Name>TEST_RELEASE_55</Name>
+    <StartDate>2017/07/06</StartDate>
+    <EndDate>2018/01/02</EndDate>
+    <Description>This is Release Description - 55</Description>
+  </Release>
+  <Release id="56">
+    <Name>TEST_RELEASE_56</Name>
+    <StartDate>2018/01/03</StartDate>
+    <EndDate>2018/07/02</EndDate>
+    <Description>This is Release Description - 56</Description>
+  </Release>
+  <Release id="57">
+    <Name>TEST_RELEASE_57</Name>
+    <StartDate>2018/07/03</StartDate>
+    <EndDate>2018/12/30</EndDate>
+    <Description>This is Release Description - 57</Description>
+  </Release>
+  <Release id="58">
+    <Name>TEST_RELEASE_58</Name>
+    <StartDate>2018/12/31</StartDate>
+    <EndDate>2019/06/29</EndDate>
+    <Description>This is Release Description - 58</Description>
+  </Release>
+  <Release id="59">
+    <Name>TEST_RELEASE_59</Name>
+    <StartDate>2019/06/30</StartDate>
+    <EndDate>2019/12/27</EndDate>
+    <Description>This is Release Description - 59</Description>
+  </Release>
+  <Release id="60">
+    <Name>TEST_RELEASE_60</Name>
+    <StartDate>2019/12/28</StartDate>
+    <EndDate>2020/06/25</EndDate>
+    <Description>This is Release Description - 60</Description>
+  </Release>
+  <Release id="61">
+    <Name>TEST_RELEASE_61</Name>
+    <StartDate>2020/06/26</StartDate>
+    <EndDate>2020/12/23</EndDate>
+    <Description>This is Release Description - 61</Description>
+  </Release>
+  <Release id="62">
+    <Name>TEST_RELEASE_62</Name>
+    <StartDate>2020/12/24</StartDate>
+    <EndDate>2021/06/22</EndDate>
+    <Description>This is Release Description - 62</Description>
+  </Release>
+  <Release id="63">
+    <Name>TEST_RELEASE_63</Name>
+    <StartDate>2021/06/23</StartDate>
+    <EndDate>2021/12/20</EndDate>
+    <Description>This is Release Description - 63</Description>
+  </Release>
+  <Release id="64">
+    <Name>TEST_RELEASE_64</Name>
+    <StartDate>2021/12/21</StartDate>
+    <EndDate>2022/06/19</EndDate>
+    <Description>This is Release Description - 64</Description>
+  </Release>
+  <Release id="65">
+    <Name>TEST_RELEASE_65</Name>
+    <StartDate>2022/06/20</StartDate>
+    <EndDate>2022/12/17</EndDate>
+    <Description>This is Release Description - 65</Description>
+  </Release>
+  <Release id="66">
+    <Name>TEST_RELEASE_66</Name>
+    <StartDate>2022/12/18</StartDate>
+    <EndDate>2023/06/16</EndDate>
+    <Description>This is Release Description - 66</Description>
+  </Release>
+  <Release id="67">
+    <Name>TEST_RELEASE_67</Name>
+    <StartDate>2023/06/17</StartDate>
+    <EndDate>2023/12/14</EndDate>
+    <Description>This is Release Description - 67</Description>
+  </Release>
+  <Release id="68">
+    <Name>TEST_RELEASE_68</Name>
+    <StartDate>2023/12/15</StartDate>
+    <EndDate>2024/06/12</EndDate>
+    <Description>This is Release Description - 68</Description>
+  </Release>
+  <Release id="69">
+    <Name>TEST_RELEASE_69</Name>
+    <StartDate>2024/06/13</StartDate>
+    <EndDate>2024/12/10</EndDate>
+    <Description>This is Release Description - 69</Description>
+  </Release>
+  <Release id="70">
+    <Name>TEST_RELEASE_70</Name>
+    <StartDate>2024/12/11</StartDate>
+    <EndDate>2025/06/09</EndDate>
+    <Description>This is Release Description - 70</Description>
+  </Release>
+  <Release id="71">
+    <Name>TEST_RELEASE_71</Name>
+    <StartDate>2025/06/10</StartDate>
+    <EndDate>2025/12/07</EndDate>
+    <Description>This is Release Description - 71</Description>
+  </Release>
+  <Release id="72">
+    <Name>TEST_RELEASE_72</Name>
+    <StartDate>2025/12/08</StartDate>
+    <EndDate>2026/06/06</EndDate>
+    <Description>This is Release Description - 72</Description>
+  </Release>
+  <Release id="73">
+    <Name>TEST_RELEASE_73</Name>
+    <StartDate>2026/06/07</StartDate>
+    <EndDate>2026/12/04</EndDate>
+    <Description>This is Release Description - 73</Description>
+  </Release>
+  <Release id="74">
+    <Name>TEST_RELEASE_74</Name>
+    <StartDate>2026/12/05</StartDate>
+    <EndDate>2027/06/03</EndDate>
+    <Description>This is Release Description - 74</Description>
+  </Release>
+  <Release id="75">
+    <Name>TEST_RELEASE_75</Name>
+    <StartDate>2027/06/04</StartDate>
+    <EndDate>2027/12/01</EndDate>
+    <Description>This is Release Description - 75</Description>
+  </Release>
+  <Release id="76">
+    <Name>TEST_RELEASE_76</Name>
+    <StartDate>2027/12/02</StartDate>
+    <EndDate>2028/05/30</EndDate>
+    <Description>This is Release Description - 76</Description>
+  </Release>
+  <Release id="77">
+    <Name>TEST_RELEASE_77</Name>
+    <StartDate>2028/05/31</StartDate>
+    <EndDate>2028/11/27</EndDate>
+    <Description>This is Release Description - 77</Description>
+  </Release>
+  <Release id="78">
+    <Name>TEST_RELEASE_78</Name>
+    <StartDate>2028/11/28</StartDate>
+    <EndDate>2029/05/27</EndDate>
+    <Description>This is Release Description - 78</Description>
+  </Release>
+  <Release id="79">
+    <Name>TEST_RELEASE_79</Name>
+    <StartDate>2029/05/28</StartDate>
+    <EndDate>2029/11/24</EndDate>
+    <Description>This is Release Description - 79</Description>
+  </Release>
+  <Release id="80">
+    <Name>TEST_RELEASE_80</Name>
+    <StartDate>2029/11/25</StartDate>
+    <EndDate>2030/05/24</EndDate>
+    <Description>This is Release Description - 80</Description>
+  </Release>
+  <Release id="81">
+    <Name>TEST_RELEASE_81</Name>
+    <StartDate>2030/05/25</StartDate>
+    <EndDate>2030/11/21</EndDate>
+    <Description>This is Release Description - 81</Description>
+  </Release>
+  <Release id="82">
+    <Name>TEST_RELEASE_82</Name>
+    <StartDate>2030/11/22</StartDate>
+    <EndDate>2031/05/21</EndDate>
+    <Description>This is Release Description - 82</Description>
+  </Release>
+  <Release id="83">
+    <Name>TEST_RELEASE_83</Name>
+    <StartDate>2031/05/22</StartDate>
+    <EndDate>2031/11/18</EndDate>
+    <Description>This is Release Description - 83</Description>
+  </Release>
+  <Release id="84">
+    <Name>TEST_RELEASE_84</Name>
+    <StartDate>2031/11/19</StartDate>
+    <EndDate>2032/05/17</EndDate>
+    <Description>This is Release Description - 84</Description>
+  </Release>
+  <Release id="85">
+    <Name>TEST_RELEASE_85</Name>
+    <StartDate>2032/05/18</StartDate>
+    <EndDate>2032/11/14</EndDate>
+    <Description>This is Release Description - 85</Description>
+  </Release>
+  <Release id="86">
+    <Name>TEST_RELEASE_86</Name>
+    <StartDate>2032/11/15</StartDate>
+    <EndDate>2033/05/14</EndDate>
+    <Description>This is Release Description - 86</Description>
+  </Release>
+  <Release id="87">
+    <Name>TEST_RELEASE_87</Name>
+    <StartDate>2033/05/15</StartDate>
+    <EndDate>2033/11/11</EndDate>
+    <Description>This is Release Description - 87</Description>
+  </Release>
+  <Release id="88">
+    <Name>TEST_RELEASE_88</Name>
+    <StartDate>2033/11/12</StartDate>
+    <EndDate>2034/05/11</EndDate>
+    <Description>This is Release Description - 88</Description>
+  </Release>
+  <Release id="89">
+    <Name>TEST_RELEASE_89</Name>
+    <StartDate>2034/05/12</StartDate>
+    <EndDate>2034/11/08</EndDate>
+    <Description>This is Release Description - 89</Description>
+  </Release>
+  <Release id="90">
+    <Name>TEST_RELEASE_90</Name>
+    <StartDate>2034/11/09</StartDate>
+    <EndDate>2035/05/08</EndDate>
+    <Description>This is Release Description - 90</Description>
+  </Release>
+  <Release id="91">
+    <Name>TEST_RELEASE_91</Name>
+    <StartDate>2035/05/09</StartDate>
+    <EndDate>2035/11/05</EndDate>
+    <Description>This is Release Description - 91</Description>
+  </Release>
+  <Release id="92">
+    <Name>TEST_RELEASE_92</Name>
+    <StartDate>2035/11/06</StartDate>
+    <EndDate>2036/05/04</EndDate>
+    <Description>This is Release Description - 92</Description>
+  </Release>
+  <Release id="93">
+    <Name>TEST_RELEASE_93</Name>
+    <StartDate>2036/05/05</StartDate>
+    <EndDate>2036/11/01</EndDate>
+    <Description>This is Release Description - 93</Description>
+  </Release>
+  <Release id="94">
+    <Name>TEST_RELEASE_94</Name>
+    <StartDate>2036/11/02</StartDate>
+    <EndDate>2037/05/01</EndDate>
+    <Description>This is Release Description - 94</Description>
+  </Release>
+  <Release id="95">
+    <Name>TEST_RELEASE_95</Name>
+    <StartDate>2037/05/02</StartDate>
+    <EndDate>2037/10/29</EndDate>
+    <Description>This is Release Description - 95</Description>
+  </Release>
+  <Release id="96">
+    <Name>TEST_RELEASE_96</Name>
+    <StartDate>2037/10/30</StartDate>
+    <EndDate>2038/04/28</EndDate>
+    <Description>This is Release Description - 96</Description>
+  </Release>
+  <Release id="97">
+    <Name>TEST_RELEASE_97</Name>
+    <StartDate>2038/04/29</StartDate>
+    <EndDate>2038/10/26</EndDate>
+    <Description>This is Release Description - 97</Description>
+  </Release>
+  <Release id="98">
+    <Name>TEST_RELEASE_98</Name>
+    <StartDate>2038/10/27</StartDate>
+    <EndDate>2039/04/25</EndDate>
+    <Description>This is Release Description - 98</Description>
+  </Release>
+  <Release id="99">
+    <Name>TEST_RELEASE_99</Name>
+    <StartDate>2039/04/26</StartDate>
+    <EndDate>2039/10/23</EndDate>
+    <Description>This is Release Description - 99</Description>
+  </Release>
+  <Release id="100">
+    <Name>TEST_RELEASE_100</Name>
+    <StartDate>2039/10/24</StartDate>
+    <EndDate>2040/04/21</EndDate>
+    <Description>This is Release Description - 100</Description>
+  </Release>
+</Releases>
+
