@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import ntut.csie.ezScrum.pic.core.IUserSession;
 import ntut.csie.ezScrum.web.action.PermissionAction;
 import ntut.csie.ezScrum.web.helper.ProjectHelper;
-import ntut.csie.ezScrum.web.mapper.ProjectMapper;
 import ntut.csie.ezScrum.web.support.SessionManager;
 import ntut.csie.jcis.resource.core.IProject;
 
@@ -34,6 +33,7 @@ public class AjaxGetHandlerListAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 	        HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info("Get Handler List in the Summary Page.");
 
 		// get project from session or DB
@@ -50,7 +50,8 @@ public class AjaxGetHandlerListAction extends PermissionAction {
 				  .append("</Handler>");
 		}
 		result.append("</Handlers>");
-
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxGetHandlerListAction:" + (time2 - time1));
 		return result;
 	}
 }

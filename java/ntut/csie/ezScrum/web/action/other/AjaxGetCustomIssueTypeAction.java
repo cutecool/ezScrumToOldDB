@@ -20,8 +20,7 @@ import org.apache.struts.action.ActionMapping;
 public class AjaxGetCustomIssueTypeAction extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		
-//		IProject project = (IProject) request.getSession().getAttribute("Project");
+		long time1 = System.currentTimeMillis();
 		IProject project = SessionManager.getProject(request);
 		IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
 		
@@ -74,6 +73,9 @@ public class AjaxGetCustomIssueTypeAction extends Action {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxGetCustomIssueTypeAction:" + (time2 - time1));
 		return null;
 	}
 }

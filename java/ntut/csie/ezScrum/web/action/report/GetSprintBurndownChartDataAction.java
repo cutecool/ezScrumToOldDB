@@ -24,6 +24,7 @@ public class GetSprintBurndownChartDataAction extends Action {
 
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 	        HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info(" Get Sprint Burndown Chart Data. In Project Summary Page.");
 
 		// get project from session or DB
@@ -42,6 +43,9 @@ public class GetSprintBurndownChartDataAction extends Action {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		long time2 = System.currentTimeMillis();
+		System.out.println("GetSprintBurndownChartDataAction " + type + ":"+ 
+		+ (time2 - time1));
 		return null;
 	}
 

@@ -22,34 +22,8 @@ public class AjaxGetTagListAction extends Action {
 	
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info(" Get Tag List in AjaxGetTagListAction. ");
-//		String result = "";
-//		try
-//		{
-//			IProject project = (IProject) SessionManager.getProject(request);
-//			
-//	    	IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
-//	    	ProductBacklogHelper pbHelper = new ProductBacklogHelper(project,session);
-//			
-//			IIssueTag[] tags = pbHelper.getTagList();
-//	    	
-//			StringBuilder sb = new StringBuilder();
-//			sb.append("<TagList><Result>success</Result>");
-//	
-//			for(int i = 0; i < tags.length; i++)
-//			{
-//				sb.append("<IssueTag>");
-//				sb.append("<Id>" + tags[i].getTagId() + "</Id>");
-//				sb.append("<Name>" + new TranslateSpecialChar().TranslateXMLChar(tags[i].getTagName()) + "</Name>");
-//				sb.append("</IssueTag>");
-//			}
-//			sb.append("</TagList>");
-//			result = sb.toString();
-//		}
-//		catch(Exception e)
-//		{
-//			result = "<TagList><Result>false</Result></TagList>";
-//		}
 		IProject project = (IProject) SessionManager.getProject(request);
 		IUserSession userSession = (IUserSession) request.getSession().getAttribute("UserSession");
 		String result = (new ProductBacklogHelper(userSession, project)).getTagListResponseText().toString();
@@ -61,7 +35,8 @@ public class AjaxGetTagListAction extends Action {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxGetTagList:" + (time2 - time1));
 		return null;
 	}
 }

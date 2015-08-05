@@ -20,9 +20,9 @@ import org.apache.struts.action.ActionMapping;
 import com.google.gson.JsonObject;
 
 public class ValidateUserEventAction  extends Action {
-		public ActionForward execute(ActionMapping mapping, ActionForm form,
+	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-			
+		long time1 = System.currentTimeMillis();	
 		HttpSession session = request.getSession();
     	IUserSession userSession = (IUserSession) session.getAttribute("UserSession");
     	
@@ -41,11 +41,6 @@ public class ValidateUserEventAction  extends Action {
 	    	}
 	    	isUserSessionExisted = true;
 	    }
-/*		}else{
-			//    由於session已經過期所以其他驗證皆不需要，皆設為false
-			isUserSessionExisted = false;
-			isProjectAccess = false;
-		}*/
 	    
     	JsonObject json = new JsonObject();
     	json.addProperty("IsUserSessionExisted", isUserSessionExisted);
@@ -57,6 +52,8 @@ public class ValidateUserEventAction  extends Action {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		long time2 = System.currentTimeMillis();
+		System.out.println("ValidateUserEventAction:" + (time2 - time1));
 		return null;
 	   
     }
