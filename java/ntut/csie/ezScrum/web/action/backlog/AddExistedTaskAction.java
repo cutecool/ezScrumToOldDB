@@ -31,7 +31,7 @@ public class AddExistedTaskAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		
+		long time1 = System.currentTimeMillis();
 		// get session info
 		IProject project = (IProject) SessionManager.getProject(request);
 		IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
@@ -43,6 +43,8 @@ public class AddExistedTaskAction extends PermissionAction {
 
 		SprintBacklogHelper sprintBacklogHelper = new SprintBacklogHelper(project, session, sprintID);
 		sprintBacklogHelper.addExistedTask(storyID, selectedTaskIDs);
+		long time2 = System.currentTimeMillis();
+		System.out.println("AddExistedTaskAction:" + (time2 - time1));
 		return new StringBuilder("");
 	}
 }

@@ -24,6 +24,7 @@ public class ShowSprintBacklogListInfoAction extends Action {
 
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info("Show Sprint Backlog List Information in ShowSprintBacklogListInfo.");
 		
 		IProject project = (IProject) SessionManager.getProject(request);
@@ -34,19 +35,6 @@ public class ShowSprintBacklogListInfoAction extends Action {
 		SprintBacklogHelper sprintBacklogHelper = new SprintBacklogHelper(project, userSession, sprintID);
 		String reponseText = this.reContructString( sprintBacklogHelper.getSprintBacklogListInfoText() );
 		
-//		SprintBacklogLogic sprintBacklogLogic = new SprintBacklogLogic(project, userSession);
-//		SprintBacklogMapper backlog = sprintBacklogLogic.getSprintBacklogMapper(sprintID);
-//		
-//		// 取得工作天數
-//		int availableDays = sprintBacklogLogic.getAvailableDays(sprintID);
-//		
-//		String reponseText = "";
-//		if (backlog != null) {
-//			reponseText = getTreeSprintBacklogStr(backlog, availableDays);
-//		}else{
-//			return null;
-//		}
-		
 		response.setContentType("text/html; charset=utf-8");
 		try {
 			response.getWriter().write(reponseText);
@@ -55,24 +43,11 @@ public class ShowSprintBacklogListInfoAction extends Action {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		long time2 = System.currentTimeMillis();
+		System.out.println("ShowSprintBacklogListInfoAction:" + (time2 - time1));
 		return null;
-
-//		if (backlog != null) {
-//			response.setContentType("text/html; charset=utf-8");
-//			try {
-//				response.getWriter().write(getTreeSprintBacklogStr(backlog, availableDays));
-//				LogFactory.getLog(SecurityRequestProcessor.class).debug("Current Time : " + new Date().toString());
-//				response.getWriter().close();
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
-//		}
-//		
-//		return null;
 	}
 
-	
 	// 重建 json 字串讓資料可以對應 ext TreeGrid Column 
 	private String reContructString(String jsonStr){
 		while(jsonStr.contains("\"dateToHourMap\":{")){
@@ -89,33 +64,4 @@ public class ShowSprintBacklogListInfoAction extends Action {
 		
 		return jsonStr;
 	}
-	
-//	private String getTreeSprintBacklogStr(SprintBacklogMapper backlog, int availableDays) {
-//		List<SprintBacklogTreeStructure> SBtree = new ArrayList<SprintBacklogTreeStructure>();
-//		
-//		if (backlog.getSprintPlanId() > 0) {
-//			List<IIssue> stories = backlog.getStoriesByImp();
-//			Map<Long, IIssue[]> map = backlog.getTasksMap();
-//			
-//			// 取得 Sprint 日期的 Column
-//			SprintBacklogHelper sprintHelper = new SprintBacklogHelper();
-//			List<SprintBacklogDateColumn> cols = null;
-//			if (sprintHelper.GetCurrentDateColumns() == null)
-//				cols = sprintHelper.getDateList(backlog.getIterStartDate(), availableDays);
-//			else
-//				cols = sprintHelper.GetCurrentDateColumns();
-//			
-//			for (IIssue story : stories) {
-//				SprintBacklogTreeStructure tree = new SprintBacklogTreeStructure(story, map.get(Long.valueOf(story.getIssueID())), sprintHelper.GetCurrentDateList());
-//				SBtree.add(tree);
-//			}
-//		} else {
-//			// null sprint backlog
-//			SprintBacklogTreeStructure tree = new SprintBacklogTreeStructure();
-//			SBtree.add(tree);
-//		}
-//		
-//		Gson gson = new Gson();
-//		return reContructString(gson.toJson(SBtree));
-//	}
 }

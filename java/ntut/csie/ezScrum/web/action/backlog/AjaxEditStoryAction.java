@@ -33,6 +33,7 @@ public class AjaxEditStoryAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info("Edit Story in AjaxEditStoryAction.");
 		
 		// get session info
@@ -47,24 +48,12 @@ public class AjaxEditStoryAction extends PermissionAction {
 		String value = request.getParameter("Value");
 		String howToDemo = request.getParameter("HowToDemo");
 		String notes = request.getParameter("Notes");
-//		ITSPrefsStorage prefs = new ITSPrefsStorage(project, session);
-//		String mantisUrl = prefs.getServerUrl();
 		
 		ProductBacklogHelper productBacklogHelper = new ProductBacklogHelper(session, project);
 		IIssue issue = productBacklogHelper.editStory(id, Name, value, importances, estimated, howToDemo, notes);
 		StringBuilder result = productBacklogHelper.translateStoryToJson(issue);
-		
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxEditStoryAction:" + (time2 - time1));
 		return result;
-		
-//		ProductBacklogHelper helper = new ProductBacklogHelper(project, session);
-//		helper.edit(id,Name,value,importances, estimated, howToDemo, notes);
-//
-//		IIssue issue = helper.getIssue(id);
-//		
-//		StringBuilder result = new StringBuilder("");
-//		result.append(new Translation(mantisUrl).translateStoryToJson(issue));
-//		result.append(new Translation().translateStoryToJson(issue));
-//		
-//		return result;
 	}
 }

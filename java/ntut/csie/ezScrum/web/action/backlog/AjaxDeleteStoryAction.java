@@ -31,6 +31,7 @@ public class AjaxDeleteStoryAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.info("Delete Story in AjaxDeleteStoryAction.");
 		// get session info
 		IProject project = (IProject) SessionManager.getProject(request);
@@ -41,14 +42,8 @@ public class AjaxDeleteStoryAction extends PermissionAction {
 		
 		ProductBacklogHelper productBacklogHelper = new ProductBacklogHelper(session, project);
 		StringBuilder result = productBacklogHelper.deleteStory(Long.toString(ID));	
-		
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxDeleteStoryAction:" + (time2 - time1));
 		return result;
-//		ProductBacklogHelper helper = new ProductBacklogHelper(project, session);
-//		helper.productBacklogHelper.deleteStory(helper, Long.toString(ID));	
-//
-//		StringBuilder result = new StringBuilder("");
-//		result.append("{\"success\":true, \"Total\":1, \"Stories\":[{\"Id\":"+ID+"}]}");
-//		
-//		return result;
 	}
 }

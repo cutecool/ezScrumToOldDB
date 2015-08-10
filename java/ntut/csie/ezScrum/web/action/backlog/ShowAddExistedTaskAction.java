@@ -17,7 +17,6 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 
 public class ShowAddExistedTaskAction extends PermissionAction {
-//	private static Log log = LogFactory.getLog(ShowAddExistedTaskAction.class);
 	
 	@Override
 	public boolean isValidAction() {
@@ -33,19 +32,17 @@ public class ShowAddExistedTaskAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		
+		long time1 = System.currentTimeMillis();
 		// get session info
 		IProject project = (IProject) SessionManager.getProject(request);
 		IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
 		
 		// get parameter info
-//		String issueID = request.getParameter("issueID");
 		String sprintID = request.getParameter("sprintID");
 		
 		IIssue[] issues = (new ProductBacklogHelper(project, session)).getAddableTasks();
 		
 		SprintBacklogMapper backlog = (new SprintBacklogLogic(project, session, sprintID)).getSprintBacklogMapper();
-//		NumberFormat formater =  NumberFormat.getInstance();
 		
 		// 封裝 Task 成 XML
     	StringBuilder sb = new StringBuilder();
@@ -57,8 +54,6 @@ public class ShowAddExistedTaskAction extends PermissionAction {
     		 * @author Zam, Alex
     		 * @time 2013/2/6
     		 */
-//    		sb.append("<TaskPointMsg>" + formater.format(backlog.getCurrentPoint(ScrumEnum.TASK_ISSUE_TYPE)) + "</TaskPointMsg>");
-//    		sb.append("<TaskStoryPointMsg>" + formater.format(backlog.getCurrentPoint(Long.parseLong(issueID))) + "</TaskStoryPointMsg>");
     		if (issues != null)
     		{
 	    		for(int i = 0; i < issues.length; i++){			
@@ -78,7 +73,9 @@ public class ShowAddExistedTaskAction extends PermissionAction {
 			sb.append("</Tasks>");
 			System.out.println("JSON：" + sb.toString());
     	}
-
+    	long time2 = System.currentTimeMillis();
+		System.out.println("ShowAddExistedTaskAction:" + (time2 - time1));
+		
 		return sb;
 	}
 }

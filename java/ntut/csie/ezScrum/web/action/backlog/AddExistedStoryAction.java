@@ -15,7 +15,6 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 
 public class AddExistedStoryAction extends PermissionAction {
-//	private static Log log = LogFactory.getLog(AddExistedStoryAction.class);
 	
 	@Override
 	public boolean isValidAction() {
@@ -31,7 +30,7 @@ public class AddExistedStoryAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		
+		long time1 = System.currentTimeMillis();
 		// get session info
 		IProject project = (IProject) SessionManager.getProject(request);
 		IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
@@ -48,47 +47,9 @@ public class AddExistedStoryAction extends PermissionAction {
 		
 		SprintBacklogHelper sprintBacklogHelper = new SprintBacklogHelper(project, session, sprintID);
 		sprintBacklogHelper.addExistedStory(list, releaseID);
+		long time2 = System.currentTimeMillis();
+		System.out.println("AddExistedStoryAction:" + (time2 - time1));
 		
 		return new StringBuilder("");
-		
-//		ProductBacklogLogic helper = new ProductBacklogLogic(session, project);
-//		
-//		if ( (sprintID != null) && (! sprintID.isEmpty()) && (! sprintID.equals("-1")) ) {
-//			//將Story加入Sprint當中
-//			helper.addIssueToSprint(list, sprintID);
-//			
-//			//檢查Sprint是否有存在於某個Release中
-//			ReleasePlanHelper releasePlan = new ReleasePlanHelper(project);
-//			String sprintReleaseID = releasePlan.getReleaseID(sprintID);
-//			
-//			//如果有的話，將所有Story加入Release
-//			if(!(sprintReleaseID.equals("0"))) {
-//				helper.addReleaseTagToIssue(list, sprintReleaseID);
-//			}
-//		} else {
-//			helper.addReleaseTagToIssue(list, releaseID);
-//		}
-//			
-//		return new StringBuilder("");
-//	
-////		ProductBacklogHelper helper = new ProductBacklogHelper(project, session);
-////			
-////		if ( (sprintID != null) && (! sprintID.isEmpty()) && (! sprintID.equals("-1")) ) {
-////			//將Story加入Sprint當中
-////			helper.add(list, sprintID);
-////			
-////			//檢查Sprint是否有存在於某個Release中
-////			ReleasePlanHelper releasePlan = new ReleasePlanHelper(project);
-////			String sprintReleaseID = releasePlan.getReleaseID(sprintID);
-////			
-////			//如果有的話，將所有Story加入Release
-////			if(!(sprintReleaseID.equals("0"))) {
-////				helper.addRelease(list, sprintReleaseID);
-////			}
-////		} else {
-////			helper.addRelease(list, releaseID);
-////		}
-////			
-////		return new StringBuilder("");
 	}
 }

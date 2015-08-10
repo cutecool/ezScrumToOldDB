@@ -31,6 +31,7 @@ public class ShowProductBacklogAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
+		long time1 = System.currentTimeMillis();
 		log.debug("Show Product Backlog in ShowProductBacklogAction.");
 		
 		// get session info
@@ -41,17 +42,8 @@ public class ShowProductBacklogAction extends PermissionAction {
 		String filterType = request.getParameter("FilterType");		// 取得過濾的條件
 		
 		StringBuilder result = (new ProductBacklogHelper(userSession, project)).getShowProductBacklogResponseText(filterType);
-    	
+		long time2 = System.currentTimeMillis();
+		System.out.println("ShowProductBacklogAction:" + (time2 - time1));
 		return result;
-		
-//    	ProductBacklogHelper pbHelper = new ProductBacklogHelper(project, userSession);
-//		AProductBacklogFilter filter = ProductBacklogFilterFactory.getInstance().getPBFilterFilter(filterType, pbHelper.getStories());
-//    	IStory[] stories = filter.getStories();						// 回傳過濾後的 Stories
-//
-//		ITSPrefsStorage prefs = new ITSPrefsStorage(project, session);
-//		String mantisUrl = prefs.getServerUrl();
-//		StringBuilder result = new StringBuilder("");
-//		result.append(new Translation(mantisUrl).translateStoryToJson(stories));
-//		return result;
 	}
 }

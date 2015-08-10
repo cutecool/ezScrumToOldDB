@@ -13,7 +13,6 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 
 public class AjaxRemoveSprintTaskAction extends PermissionAction {
-//	private static Log log = LogFactory.getLog(AjaxRemoveSprintTaskAction.class);
 	
 	@Override
 	public boolean isValidAction() {
@@ -29,7 +28,7 @@ public class AjaxRemoveSprintTaskAction extends PermissionAction {
 	@Override
 	public StringBuilder getResponse(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		
+		long time1 = System.currentTimeMillis();
 		//  get session info
 		IProject project = (IProject) SessionManager.getProject(request);
 		IUserSession session = (IUserSession) request.getSession().getAttribute("UserSession");
@@ -47,7 +46,8 @@ public class AjaxRemoveSprintTaskAction extends PermissionAction {
 		result.append("<DropTask><Result>true</Result><Task><Id>")
 				.append(issueID)
 				.append("</Id></Task></DropTask>");
-		
+		long time2 = System.currentTimeMillis();
+		System.out.println("AjaxRemoveSprintTaskAction:" + (time2 - time1));
 		return result;		
 		
 		/*
